@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Produtos – TechControl</title>
+  <link rel="stylesheet" href="lista-produto.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">TechControl 3.0</div>
+    <div class="usuario" id="usuario-nome"></div>
+  </header>
+
+  <nav class="menu-lateral">
+    <ul>
+      <li class="item-menu" id="menu-dashboard">Dashboard</li>
+      <li class="item-menu ativo" id="menu-lista">Lista de produtos</li>
+      <li class="item-menu" id="menu-cadastro-produto">Cadastro de produtos</li>
+      <li class="item-menu" id="menu-cadastro-usuario">Cadastro de usuário</li>
+      <li class="item-menu" id="menu-sair">Sair</li>
+    </ul>
+  </nav>
+
+  <main class="conteudo">
+    <div class="topo-tabela">
+      <h1>Lista de Produtos</h1>
+      <button class="botao" id="btn-novo">+ Novo</button>
+    </div>
+    <table class="tabela">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Descrição</th>
+          <th>Estoque</th>
+          <th>Valor</th>
+          <th>Categoria</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-tabela"></tbody>
+    </table>
+  </main>
+
+  <script src="lista-produto.js"></script>
+</body>
+</html>

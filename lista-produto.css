@@ -1,0 +1,46 @@
+/* reuse variáveis do dashboard */
+@import 'dashboard.css';
+
+.conteudo .topo-tabela {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:1rem;
+}
+
+.tabela {
+  width:100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.tabela th, .tabela td {
+  padding:0.75rem;
+  border-bottom:1px solid #EAEAEA;
+  text-align:left;
+}
+
+.tabela th {
+  background: #ECF0F1;
+  color: var(--primaria);
+}
+
+.tabela tr:nth-child(even) {
+  background: var(--fundo);
+}
+
+.botao-acao {
+  background: var(--secundaria);
+  color: #fff;
+  border:none;
+  padding:0.3rem 0.6rem;
+  margin:0 2px;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:0.9rem;
+  transition: background 0.2s;
+}
+
+.botao-acao:hover {
+  background: #149174;
+}
