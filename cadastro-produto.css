@@ -1,0 +1,63 @@
+@import 'dashboard.css';
+
+.form-cadastro {
+  background: #fff;
+  padding:2rem;
+  margin:2rem auto;
+  max-width:480px;
+  border-radius:4px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-cadastro h1 {
+  margin-bottom:1rem;
+  color: var(--primaria);
+}
+
+.form-cadastro label {
+  display:block;
+  margin-top:1rem;
+  margin-bottom:0.5rem;
+  font-weight:bold;
+  color: var(--primaria);
+}
+
+.campo-input {
+  width:100%;
+  padding:0.75rem;
+  border:1px solid #ccc;
+  border-radius:4px;
+}
+
+.botoes-form {
+  margin-top:1.5rem;
+  text-align:right;
+}
+
+.botao-cancelar {
+  background:#ccc;
+  color:#333;
+  border:none;
+  padding:0.75rem 1.5rem;
+  border-radius:4px;
+  cursor:pointer;
+  margin-right:0.5rem;
+}
+
+.botao-cancelar:hover {
+  background:#b3b3b3;
+}
+
+.botao {
+  background: var(--secundaria);
+  color: #fff;
+  border:none;
+  padding:0.75rem 1.5rem;
+  border-radius:4px;
+  cursor:pointer;
+  transition:background 0.3s;
+}
+
+.botao:hover {
+  background:#149174;
+}
