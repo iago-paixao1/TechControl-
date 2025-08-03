@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – TechControl 3.0</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">TechControl 3.0</div>
+    <div class="usuario" id="usuario-nome"></div>
+  </header>
+
+  <nav class="menu-lateral">
+    <ul>
+      <li class="item-menu ativo" id="menu-dashboard">Dashboard</li>
+      <li class="item-menu" id="menu-lista">Lista de produtos</li>
+      <li class="item-menu" id="menu-cadastro-produto">Cadastro de produtos</li>
+      <li class="item-menu" id="menu-cadastro-usuario">Cadastro de usuário</li>
+      <li class="item-menu" id="menu-sair">Sair</li>
+    </ul>
+  </nav>
+
+  <main class="conteudo">
+    <div class="grid-dashboard">
+      <div class="card">
+        <h2 id="total-itens">0</h2>
+        <p>Itens em Estoque</p>
+      </div>
+      <div class="card">
+        <h2 id="valor-total">R$ 0,00</h2>
+        <p>Valor Total do Estoque</p>
+      </div>
+      <div class="card">
+        <h2 id="qtd-cadastrados">0</h2>
+        <p>Produtos Cadastrados</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
