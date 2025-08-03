@@ -1,0 +1,6 @@
+@import 'login.css';
+
+/* reaproveita estilos de login */
+.caixa-login {
+  max-width: 360px;
+}
