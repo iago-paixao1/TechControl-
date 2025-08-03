@@ -1,6 +1,6 @@
 // configura menu e cabeçalho
 function initTopo() {
-  const usuario = JSON.parse(localStorage.getItem('usuarioLogado'));
+  const usuario = JSON.parse(localStorage.getItem('usuario'));
   document.getElementById('usuario-nome').textContent = usuario.nome;
   document.querySelectorAll('.item-menu').forEach(item => {
     item.addEventListener('click', () => {

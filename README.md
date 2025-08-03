@@ -1,4 +1,7 @@
 # TechControl-
+<<<<<<< HEAD
+Explorando controle de estoque .
+=======
 Explorando controle de estoque .
 
 tela de login inicial
@@ -13,3 +16,4 @@ cadastro de produto
 e uma lista para mostrar todo o estoque
 <img width="1432" height="773" alt="lista" src="https://github.com/user-attachments/assets/042430ca-4a00-4d89-967f-9d72d48dd7c2" />
 .
+>>>>>>> 22b858eddac3841d21e0f7d192d581bf7382ccaf
