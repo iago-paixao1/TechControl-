@@ -1,6 +1,6 @@
 // carrega usuário e configura menu
 function configurarMenu() {
-  const usuario = JSON.parse(localStorage.getItem('usuarioLogado'));
+  const usuario = JSON.parse(localStorage.getItem('usuario'));//localStorage.getItem('usuarioLogado'));
   document.getElementById('usuario-nome').textContent = usuario.nome;
   document.querySelectorAll('.item-menu').forEach(item => {
     item.addEventListener('click', () => {

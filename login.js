@@ -7,6 +7,7 @@
   }
 })();
 
+
 // ao clicar em Entrar, valida credenciais
 document.getElementById('btn-login').addEventListener('click', function () {
   const email = document.getElementById('email').value.trim();
@@ -27,3 +28,4 @@ document.getElementById('btn-login').addEventListener('click', function () {
     alert('Email ou senha inválidos.');
   }
 });
+
