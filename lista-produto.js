@@ -1,30 +1,3 @@
-// carrega usuário e configura menu
-function configurarMenu() {
-  const usuario = JSON.parse(localStorage.getItem('usuario'));//localStorage.getItem('usuarioLogado'));
-  document.getElementById('usuario-nome').textContent = usuario.nome;
-  document.querySelectorAll('.item-menu').forEach(item => {
-    item.addEventListener('click', () => {
-      switch(item.id) {
-        case 'menu-dashboard': 
-          window.location.href = 'dashboard.html'; 
-          break;
-        case 'menu-lista': 
-          window.location.href = 'lista-produto.html';
-          break;
-        case 'menu-cadastro-produto': 
-          window.location.href = 'cadastro-produto.html'; 
-          break;
-        case 'menu-cadastro-usuario': 
-          window.location.href = 'cadastro-usuario.html'; 
-          break;
-        case 'menu-sair':
-          localStorage.removeItem('usuarioLogado');
-          window.location.href = 'login.html';
-          break;
-      }
-    });
-  });
-}
 
 // renderiza a tabela de produtos
 function renderizarTabela() {
@@ -85,8 +58,7 @@ document.getElementById('btn-novo').addEventListener('click', () => {
   localStorage.removeItem('indiceEditar');
   window.location.href = 'cadastro-produto.html';
 });
-
 document.addEventListener('DOMContentLoaded', () => {
-  configurarMenu();
   renderizarTabela();
+  initTopo();
 });

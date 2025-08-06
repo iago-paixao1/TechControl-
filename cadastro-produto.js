@@ -1,25 +1,3 @@
-// configura menu e cabeçalho
-function initTopo() {
-  const usuario = JSON.parse(localStorage.getItem('usuario'));
-  document.getElementById('usuario-nome').textContent = usuario.nome;
-  document.querySelectorAll('.item-menu').forEach(item => {
-    item.addEventListener('click', () => {
-      switch (item.id) {
-        case 'menu-dashboard': window.location.href = 'dashboard.html';
-          break;
-        case 'menu-lista': window.location.href = 'lista-produto.html';
-          break;
-        case 'menu-cadastro-produto':
-          break;
-        case 'menu-cadastro-usuario': window.location.href = 'cadastro-usuario.html';
-          break;
-        case 'menu-sair':
-          localStorage.removeItem('usuarioLogado');
-          window.location.href = 'login.html';
-      }
-    });
-  });
-}
 
 // carrega formulário para novo ou edição
 function carregarFormulario() {
